@@ -1,0 +1,124 @@
+:root {
+    --banner-color: #6D9396;
+    --contact-color: #9AB8BA;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 1rem;
+    background-color: var(--banner-color);
+    padding-bottom: 2rem;
+}
+
+.presentation__title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.presentation__title strong {
+    color: #CFE1E5;
+}
+.presentation__subtitle {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.about {
+    font-weight: 500;
+    padding: 0 1rem;
+    text-align: justify;
+    line-height: 0.9rem;
+    font-size: 0.7rem;
+}
+
+.about h1{
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.about p{
+    font-size: 0.6rem;
+}
+.about strong{
+    color: var(--banner-color);
+    font-weight: 700;
+}
+
+.about__img {
+    width: 20rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.contact {
+    background-color: var(--contact-color);
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact__title {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.contact__subtitle {
+    background-color: #fff;
+    padding: 0.5rem;
+    /* border-radius: 0.5rem; */
+    text-align: center;
+    font-weight: 500;
+    line-height: 1rem;
+    font-size: 0.7rem;
+}
+
+.contact__btn {
+    background-color: #698F92;
+    font-size: 0.7rem;
+    border: none;
+    padding: 0.5rem;
+    color: #fff;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.contact__btn:hover {
+    background-color: #CFE1E5;
+    color: #16231C;
+}
+
+.contact__btn:active{
+    transform: scale(0.9);
+}
+
+@media (min-width: 1000px) {
+    .content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 1rem 2rem;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .about__img {
+        grid-column: 2/3;
+    }
+
+
+}
+

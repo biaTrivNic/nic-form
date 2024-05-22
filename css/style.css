@@ -1,0 +1,125 @@
+:root {
+    --bg-color: #6D9396;
+    --text-color: #16231C;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+
+body { 
+    min-height: 100vh;
+    background-color: #fff; 
+    font-family: Poppins;
+}
+
+.header {
+    background-color: var(--bg-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+}
+
+.header__logo {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.header__logo:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.header__logo strong {
+    color: #CFE1E5;
+}
+
+.header__nav {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.header__nav__item {
+    font-size: 0.7rem;
+    position: relative;
+    color: #fff;
+}
+.header__nav__item::after {
+    content: "";
+    background-color: #fff;
+    height: 0.05rem;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.header__nav__item:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.footer {
+    background-color: var(--bg-color);
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #9AB8BA;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: #9AB8BA;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--bg-color);
+}
+
+
+@media (min-width: 1000px) {
+    :root {
+        font-size: 170%;
+    }
+}
+@media (min-width: 1300px) {
+    :root {
+        font-size: 200%;
+    }
+}
+@media (min-width: 1500px) {
+    :root {
+        font-size: 230%;
+    }
+}
+@media (min-width: 2000px) {
+    :root {
+        font-size: 280%;
+    }
+}
+

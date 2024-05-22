@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contato.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="/">Wonder<strong>What</strong></a>
+        <nav class="header__nav">
+            <a class="header__nav__item" href="/">Home</a>
+            <a class="header__nav__item" href="#">Sobre</a>
+            <a class="header__nav__item" href="html/contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <dialog class="dialog">
+            <button class="dialog__btn">x</button>
+            <h1 class="dialog__title">Sua mensagem foi enviada!</h1>
+            <h2 class="dialog__subtitle">Em breve entraremos em contato com você.</h2>
+            <h2 class="dialog__subtitle">Ou não...</h2>
+        </dialog>
+
+        <section class="description">
+            <h1 class="description__title">Entre em <strong>Contato</strong>!</h1>
+            <h2 class="description__subtitle">Já temos dúvidas demais por aqui, mas sinta-se a vontade para nos trazer as suas também!</h2>
+        </section>
+
+        <section class="contact__container">
+            <section class="form__container">
+                <h1 class="form__container__title">Envie sua mensagem</h1>
+
+                <form class="form" action="/enviar_formulario" method="post">
+                    <div class="form__field">
+                        <input placeholder="Nome" class="form__input" type="text" id="nome" name="nome" required>
+                        <label class="form__label"  for="nome">Nome:</label>
+                    </div>
+                    
+                    <div class="form__field">
+                        <input placeholder="Email" class="form__input" type="email" id="email" name="email" required>
+                        <label class="form__label"  for="email">Email:</label>
+                    </div>
+                    
+                    <div class="form__field">
+                        <textarea placeholder="Mensagem" class="form__input" id="mensagem" name="mensagem" rows="4" maxlength="50" required></textarea>
+                        <label class="form__label"  for="mensagem">Mensagem:</label>
+                    </div>
+            
+                    <input  class="form__btn" type="submit" value="Enviar">
+                </form>
+                
+            </section>
+
+            <section class="social__media">
+                <div class="social__media__text__container">
+                    <h1 class="social__media__title">Siga nas redes sociais</h1>
+                    <h2 class="social__media__subtitle">Para acompanhar sei lá o que.</h2>
+                </div>
+
+                <div class="social__media__img__container">
+                    <img class="social__media__img" src="../assets/img/instagram.svg" alt="">
+                    <img class="social__media__img" src="../assets/img/facebook.svg" alt="">
+                    <img class="social__media__img" src="../assets/img/tiktok.svg" alt="">
+                    <img class="social__media__img" src="../assets/img/twitter.svg" alt="">
+                </div>
+
+            </section>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 WonderWhat. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/form.js"></script>
+</body>
+</html>
