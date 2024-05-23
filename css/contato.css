@@ -45,7 +45,7 @@
 .form {
     display: grid;
     grid-template-columns: calc((100% - 1rem)/2), calc((100% - 1rem)/2);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     gap: 1rem;
 }
 
@@ -204,6 +204,12 @@ dialog:not([open]) {
 
 .dialog__subtitle {
     font-size: 0.8rem;
+}
+
+.error {
+    font-size: 0.4rem;
+    color: red;
+    grid-row: 4/5;
 }
 
 @media (min-width: 1000px) {
