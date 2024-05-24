@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contato.css">
 </head>
 <body>
     <header class="header">
@@ -14,7 +14,7 @@
         <nav class="header__nav">
             <a class="header__nav__item" href="/">Home</a>
             <a class="header__nav__item" href="#">Sobre</a>
-            <a class="header__nav__item" href="html/contato.html">Contato</a>
+            <a class="header__nav__item" href="contato/index.html">Contato</a>
         </nav>
     </header>
     <main>
@@ -38,11 +38,13 @@
                     <div class="form__field">
                         <input placeholder="Nome" class="form__input" type="text" id="nome" name="nome" required>
                         <label class="form__label"  for="nome">Nome:</label>
+                        <span id="error__name" class="error"></span>
                     </div>
                     
                     <div class="form__field">
                         <input placeholder="Email" class="form__input" type="email" id="email" name="email" required>
                         <label class="form__label"  for="email">Email:</label>
+                        <span id="error__email" class="error"></span>
                     </div>
                     
                     <div class="form__field">
@@ -51,7 +53,7 @@
                     </div>
 
                     <input  class="form__btn" type="submit" value="Enviar">
-                    <span class="error"></span>
+                    <span id="error__fields" class="error"></span>
 
                 </form>
                 
@@ -64,10 +66,10 @@
                 </div>
 
                 <div class="social__media__img__container">
-                    <img class="social__media__img" src="../assets/img/instagram.svg" alt="">
-                    <img class="social__media__img" src="../assets/img/facebook.svg" alt="">
-                    <img class="social__media__img" src="../assets/img/tiktok.svg" alt="">
-                    <img class="social__media__img" src="../assets/img/twitter.svg" alt="">
+                    <img class="social__media__img" src="/assets/img/instagram.svg" alt="">
+                    <img class="social__media__img" src="/assets/img/facebook.svg" alt="">
+                    <img class="social__media__img" src="/assets/img/tiktok.svg" alt="">
+                    <img class="social__media__img" src="/assets/img/twitter.svg" alt="">
                 </div>
 
             </section>

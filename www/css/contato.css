@@ -45,8 +45,8 @@
 .form {
     display: grid;
     grid-template-columns: calc((100% - 1rem)/2), calc((100% - 1rem)/2);
-    grid-template-rows: repeat(4, auto);
-    gap: 1rem;
+    grid-template-rows: repeat(5, auto);
+    gap: 1.5rem;
 }
 
 .form__field {
@@ -209,7 +209,14 @@ dialog:not([open]) {
 .error {
     font-size: 0.4rem;
     color: red;
+}
+
+#error__fields {
     grid-row: 4/5;
+}
+
+#error__name, #error__email{
+    grid-row: 2/3;
 }
 
 @media (min-width: 1000px) {
